@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SecurityPageShemaj</string>
+    <string name="security_screen">Security screen</string>
+    <string name="enter_your_passcode">Enter your passcode</string>
+    <string name="forgot_password">Forgot password?</string>
+</resources>
