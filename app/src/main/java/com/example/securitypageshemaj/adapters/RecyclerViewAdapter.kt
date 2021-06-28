@@ -23,7 +23,6 @@ class RecyclerViewAdapter(private var items: MutableList<ButtonModel>) :
                 itemClick(adapterPosition)
             }
         }
-
     }
 
     inner class ActionViewHolder(private var binding: ButtonLayoutBinding) :
@@ -32,7 +31,12 @@ class RecyclerViewAdapter(private var items: MutableList<ButtonModel>) :
         fun bind() {
             val model = items[adapterPosition]
             model.src?.let { binding.buttonImg.setImageResource(it) }
+            binding.root.setOnClickListener {
+                itemClick(adapterPosition)
+            }
+
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {

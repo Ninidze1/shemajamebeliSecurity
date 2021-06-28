@@ -2,6 +2,6 @@ package com.example.securitypageshemaj.fragments
 
 import androidx.lifecycle.ViewModel
 
-class SecurityScreenViewModel : ViewModel() {
-
+class TestViewModel : ViewModel() {
+    // TODO: Implement the ViewModel
 }

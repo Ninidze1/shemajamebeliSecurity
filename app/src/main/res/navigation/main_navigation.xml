@@ -9,5 +9,17 @@
         android:id="@+id/securityScreenFragment"
         android:name="com.example.securitypageshemaj.fragments.SecurityScreenFragment"
         android:label="security_screen_fragment"
-        tools:layout="@layout/security_screen_fragment" />
+        tools:layout="@layout/security_screen_fragment" >
+        <action
+            android:id="@+id/action_securityScreenFragment_to_testFragment"
+            app:destination="@id/testFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:popUpTo="@id/securityScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.securitypageshemaj.fragments.TestFragment"
+        android:label="test_fragment"
+        tools:layout="@layout/test_fragment" />
 </navigation>
